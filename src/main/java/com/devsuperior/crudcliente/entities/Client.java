@@ -1,6 +1,7 @@
 package com.devsuperior.crudcliente.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 import java.time.LocalDate;
 
@@ -14,6 +15,7 @@ public class Client {
     private String name;
     private String cpf;
     private Double income;
+    @Column(name = "birth_date")
     private LocalDate birthDate;
     private Integer children;
 
